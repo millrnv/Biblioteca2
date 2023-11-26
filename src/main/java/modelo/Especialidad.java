@@ -2,7 +2,24 @@ package modelo;
 
 public enum Especialidad {
 
-    AUTOAYUDA, SUSPENSO, CIENCIA_FICCION, ACCION;
+    AUTOAYUDA("AutoAyuda"),
+    SUSPENSO("Suspenso"),
+    CIENCIAFICCION("Ciencia Ficción"),
+    ACCION("Acción");
+
+    private String especialidad;
+
+
+    Especialidad(String especialidad) {
+
+        this.especialidad = especialidad;
+
+    }
+
+    public String getEspecialidad(){
+        return especialidad;
+    }
+
 
 
 }
