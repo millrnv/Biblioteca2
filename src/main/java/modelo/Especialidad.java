@@ -1,19 +1,8 @@
 package modelo;
 
 public enum Especialidad {
-    AUTOAYUDA("Autoayuda"),
-    SUSPENSO("Suspenso"),
-    CIENCIAFICCION("Ciencia Ficción"),
-    ACCION("Acción");
 
-
-
-
-
-
-
-
-
+    AUTOAYUDA, SUSPENSO, CIENCIA_FICCION, ACCION;
 
 
 }
