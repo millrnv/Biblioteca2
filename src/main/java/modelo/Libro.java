@@ -6,13 +6,15 @@ public class Libro {
     private String autor;
     private String editorial;
     private String ISBN;
+    private Especialidad especialidad;
 
 
-    public Libro(String nombre, String autor, String editorial, String ISBN) {
+    public Libro(String nombre, String autor, String editorial, String ISBN, Especialidad especialidad) {
 
         this.nombre = nombre;
         this.autor = autor;
         this.editorial = editorial;
+        this.especialidad = especialidad;
 
     }
 

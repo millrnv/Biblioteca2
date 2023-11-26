@@ -1,9 +1,7 @@
 package dato;
 import java.io.*;
-import modelo.Biblioteca;
-import modelo.Libro;
-import modelo.Usuario;
-import modelo.Bibliotecario;
+
+import modelo.*;
 
 
 public class GestorDatos {
@@ -17,7 +15,7 @@ public class GestorDatos {
             while ((textoArchivo = br.readLine()) != null) {
                 String[] data = textoArchivo.split(",");
                 biblioteca.getLibros().add(new Libro
-                        (data[0], data[1],data[2],data[3]));
+                        (data[0], data[1],data[2],data[3], Especialidad.valueOf(data[4])));
             }
         } catch (Exception e) {
             System.out.println("Documento no disponible, favor contactar con administrador");
@@ -32,7 +30,7 @@ public class GestorDatos {
             while((textoArchivo = br.readLine()) != null){
                 String[] data = textoArchivo.split(",");
                 biblioteca.getUsuarios().add(new Usuario
-                        (data[0], data[1], data[2]));
+                        (data[0], data[1], data[2], data[3]));
             }
         } catch (Exception e){
             System.out.println("Documento no disponible, favor contactar con administrador");
